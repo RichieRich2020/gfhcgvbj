@@ -1,17 +1,15 @@
 import React from 'react';
-import { Home, Heart, MessageCircle } from 'lucide-react';
+import { Home, MoreHorizontal } from 'lucide-react';
+import meditationIconDark from '../assets/Meditation Icon dark.png';
 
 const MobileButton: React.FC = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const handleWhatsApp = () => {
-    // Replace with your actual WhatsApp number
-    const phoneNumber = '1213555123456';
-    const message = 'Hello! I would like to know more about your services.';
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
+  const handleMore = () => {
+    // Handle more options or menu
+    console.log('More button clicked');
   };
 
   const handleEnrich = () => {
@@ -44,20 +42,20 @@ const MobileButton: React.FC = () => {
             className="flex-1 py-3 flex flex-col items-center justify-center space-y-1 hover:bg-gray-50 transition-colors duration-200"
           >
             <div className="w-6 h-6 flex items-center justify-center">
-              <Heart size={18} className="text-gray-600" />
+              <img src={meditationIconDark} alt="Meditation" className="w-5 h-5" />
             </div>
             <span className="text-xs text-gray-600 font-medium">Enrich</span>
           </button>
           
-          {/* WhatsApp Button */}
+          {/* More Button */}
           <button
-            onClick={handleWhatsApp}
+            onClick={handleMore}
             className="flex-1 py-3 flex flex-col items-center justify-center space-y-1 hover:bg-gray-50 transition-colors duration-200"
           >
             <div className="w-6 h-6 flex items-center justify-center">
-              <MessageCircle size={18} className="text-gray-600" />
+              <MoreHorizontal size={18} className="text-gray-600" />
             </div>
-            <span className="text-xs text-gray-600 font-medium">WhatsApp</span>
+            <span className="text-xs text-gray-600 font-medium">More</span>
           </button>
         </div>
       </div>

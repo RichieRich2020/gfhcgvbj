@@ -32,6 +32,7 @@ module.exports = {
         }
       },
       fontFamily: {
+        'epilogue': ['Epilogue', 'sans-serif'],
         'serif': ['Playfair Display', 'serif'],
         'sans': ['Inter', 'sans-serif'],
       },

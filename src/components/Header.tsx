@@ -21,22 +21,18 @@ const Header: React.FC = () => {
   ];
 
   return (
-    <header className={`fixed w-full z-50 transition-all duration-300 ${
-      isScrolled 
-        ? 'bg-white bg-opacity-95 backdrop-blur-md shadow-lg' 
-        : 'bg-black bg-opacity-20 backdrop-blur-sm'
-    }`}>
+    <header className={`fixed w-full z-50 transition-all duration-300 bg-white bg-opacity-95 backdrop-blur-md shadow-lg`}>
       <div className="container-custom px-6 sm:px-8 lg:px-12">
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-primary-500 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-xl">L</span>
-            </div>
+
+              <span className="text-primary-500 font-bold text-xl">Co.</span>
+
             <span className={`text-2xl font-serif font-bold transition-colors duration-300 ${
-              isScrolled ? 'text-gray-800' : 'text-white drop-shadow-lg'
+              isScrolled ? 'text-gray-700' : 'text-gray-800 drop-shadow-lg'
             }`}>
-              Co.Evolve
+              Evolve
             </span>
           </div>
 
@@ -46,11 +42,8 @@ const Header: React.FC = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className={`font-medium transition-all duration-300 hover:scale-105 ${
-                  isScrolled 
-                    ? 'text-gray-700 hover:text-primary-500' 
-                    : 'text-white hover:text-primary-300 drop-shadow-lg'
-                }`}
+                className={`font-medium transition-all duration-300 hover:scale-105 text-gray-700 hover:text-primary-500` 
+}
               >
                 {item.name}
               </a>
@@ -59,7 +52,7 @@ const Header: React.FC = () => {
 
           {/* Phone Number */}
           <div className={`hidden lg:flex items-center space-x-2 transition-colors duration-300 ${
-            isScrolled ? 'text-primary-500' : 'text-white drop-shadow-lg'
+            isScrolled ? 'text-gray-700' : 'text-gray-700 drop-shadow-lg'
           }`}>
             <Phone size={18} />
             <span className="font-medium">555-123-3456</span>
