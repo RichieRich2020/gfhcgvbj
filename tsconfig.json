@@ -4,8 +4,9 @@
     "lib": [
       "dom",
       "dom.iterable",
-      "es6"
+      "es2019"
     ],
+    "types": ["chrome"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
