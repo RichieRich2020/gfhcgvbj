@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, ChevronLeft, ChevronRight } from 'lucide-react';
+import { X, ChevronLeft } from 'lucide-react';
 import { SignupData } from '../types/signup';
 import Step1CompanyDetails from './signup/Step1CompanyDetails';
 import Step2BusinessHealth from './signup/Step2BusinessHealth';

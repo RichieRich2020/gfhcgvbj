@@ -28,7 +28,7 @@ const Step4AccountSetup: React.FC<SignupStepProps> = ({
   };
 
   const validatePhone = (phone: string) => {
-    const phoneRegex = /^[\+]?[1-9][\d]{0,15}$/;
+    const phoneRegex = /^[+]?[1-9][\d]{0,15}$/;
     return phoneRegex.test(phone.replace(/\s/g, ''));
   };
 
@@ -126,13 +126,13 @@ const Step4AccountSetup: React.FC<SignupStepProps> = ({
       <div className="bg-gray-50 p-4 rounded-lg">
         <p className="text-sm text-gray-600">
           By creating an account, you agree to our{' '}
-          <a href="#" className="text-primary-600 hover:text-primary-700 underline">
+          <button className="text-primary-600 hover:text-primary-700 underline bg-transparent border-none cursor-pointer">
             Terms of Service
-          </a>{' '}
+          </button>{' '}
           and{' '}
-          <a href="#" className="text-primary-600 hover:text-primary-700 underline">
+          <button className="text-primary-600 hover:text-primary-700 underline bg-transparent border-none cursor-pointer">
             Privacy Policy
-          </a>
+          </button>
           . We'll use your information to provide personalized wellness recommendations.
         </p>
       </div>

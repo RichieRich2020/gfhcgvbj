@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronDown, ChevronUp, Plus, Check } from 'lucide-react';
+import { ChevronDown, ChevronUp } from 'lucide-react';
 import EnrichBanner2 from './EnrichBanner2';
 import imgJpeg from '../assets/img.jpg';
 

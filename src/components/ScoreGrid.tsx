@@ -24,7 +24,7 @@ import {
   PointElement,
   LineElement,
 } from 'chart.js';
-import { Bar, Doughnut, Line } from 'react-chartjs-2';
+import { Line } from 'react-chartjs-2';
 
 ChartJS.register(
   CategoryScale,
@@ -264,22 +264,6 @@ const ScoreGrid: React.FC = () => {
     },
   };
 
-  const doughnutOptions = {
-    responsive: true,
-    maintainAspectRatio: false,
-    plugins: {
-      legend: {
-        position: 'bottom' as const,
-        labels: {
-          font: {
-            size: 12,
-            family: 'Inter',
-          },
-          color: 'white',
-        },
-      },
-    },
-  };
 
   const renderCharts = (category: string) => {
     const data = getChartData(category);
@@ -352,28 +336,6 @@ const ScoreGrid: React.FC = () => {
       ],
     };
 
-    // Category breakdown data
-    const breakdownData = {
-      labels: data.categories,
-      datasets: [
-        {
-          data: data.values,
-          backgroundColor: [
-            'rgba(59, 130, 246, 0.8)',
-            'rgba(16, 185, 129, 0.8)',
-            'rgba(245, 158, 11, 0.8)',
-            'rgba(239, 68, 68, 0.8)',
-          ],
-          borderColor: [
-            'rgba(59, 130, 246, 1)',
-            'rgba(16, 185, 129, 1)',
-            'rgba(245, 158, 11, 1)',
-            'rgba(239, 68, 68, 1)',
-          ],
-          borderWidth: 2,
-        },
-      ],
-    };
 
     return (
       <div className="">

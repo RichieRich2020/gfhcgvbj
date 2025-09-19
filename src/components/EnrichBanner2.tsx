@@ -1,5 +1,4 @@
 import React from 'react';
-import { ArrowRight } from 'lucide-react';
 import meditationIcon from '../assets/Meditation Icon red.png';
 
 const EnrichBanner2: React.FC = () => {

@@ -1,19 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import About from './components/About';
-import { EnrollmentCard } from './components/EnrollmentCard';
-import Menu from './components/Menu';
-import Statistics from './components/Statistics';
-import EnrichCard from './components/EnrichCard';
 import ScoreGrid from './components/ScoreGrid';
-import Gallery from './components/Gallery';
-import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 import MobileButton from './components/MobileButton';
-import PersonalCustomerCard from './components/PersonalCustomerCard';
 import EnrichCreate from './components/EnrichCreate';
-import EnrichBanner from './components/EnrichBanner';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
